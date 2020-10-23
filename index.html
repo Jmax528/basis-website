@@ -3,14 +3,38 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport"
-          content="width=device-width, inital-scale=1.0" />
+          content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>jstek.nl</title>
     <link rel="icon" href="buggyarachne.png" sizes="32x32">
 
     <style type="text/css">
-        h1 {
-            border: #46aea5 3px solid;
+
+
+        ul {
+            list-style-type: none;
+            margin: auto;
+            padding: unset;
+            overflow: hidden;
+            background-color: black;
+        }
+        li {
+            float: left;
+        }
+        li a {
+            display: block;
+            color: snow;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: snow;
+        }
+        li a:hover {
+            background-color: #73f15a;
+        }
+
+        .center1 {
+           text-align: center;
+            display: block;
         }
 
         /* h3 {
@@ -20,9 +44,22 @@
 
     </style>
 </head>
-<body background="Grey%20Basic.jpg">
+<!--suppress HtmlDeprecatedAttribute -->
+<body background="Grey%20Basic.jpg" >
 
-<!-- https://toshca.carrd.co source for the code i'm toying with, note, need to look up what it all means
+
+<ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="microbit.html">Microbits</a></li>
+    <li><a href="CV%20Jalen%20Stekelenburg.docx">CV</a></li>
+    <li><a href="">Art</a></li>
+    <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+</ul>
+
+<!--
+ Animated menu i might take a look at https://www.cssscript.com/animated-round-popup-menu-with-pure-css/
+ -
+ https://toshca.carrd.co source for the code i'm toying with, note, need to look up what it all means
 <div id="wrapper">
 </div>
     <div id="main">
@@ -61,17 +98,19 @@
     <br>
     <!-- <h3><a href="" </h3>
      <br> -->
-    <h3><a href="microbit.html">Microbits</a></h3>
     <br>
 
-    <h3><a href="https://www.youtube.com" target="_blank">YouTube</a> </h3>
+    <h3> </h3>
 </form>
 
-<H3>[small round logo]</H3>
+<!--suppress HtmlDeprecatedTag -->
+<center> <img src="buggyarachne.png" alt="BA" class="center1" style="width: 250px"> </center>
+
+<!-- <H3>[small round logo]</H3> -->
 
 
 
-<h1> [big square where my CV needs to be]</h1>
+<!-- <h1> [big square where my CV needs to be]</h1> -->
 
 
 
@@ -83,10 +122,12 @@
     Yellow, black. Yellow, black.
     Yellow, black. Yellow, black.</p>
 
-<img src="jazz.jpg" height="288" width="412" alt=""/>
+
+
+<!-- <img src="jazz.jpg" height="288" width="412" alt=""/> -->
 <br>
-<img src="BuggyBee.png" height="1000" width="1000" alt=""/>
+<img src="BuggyBee.png" height="1000" width="1000" alt="Bee"/>
+
 
 </body>
-
 </html>
