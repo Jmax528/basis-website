@@ -7,57 +7,27 @@
           content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>jstek.nl</title>
-    <link rel="icon" href="buggyarachne.png" sizes="32x32">
+    <link rel="icon" href="images/buggyarachne.png" sizes="32x32">
+    <link rel="stylesheet" href="site/style.css">
 
-    <style type="text/css">
-
-        ul {
-            list-style-type: none;
-            margin: auto;
-            padding: unset;
-            overflow: hidden;
-            background-color: black;
-        }
-        li {
-            float: left;
-        }
-        li a {
-            display: block;
-            color: snow;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: snow;
-        }
-        li a:hover {
-            background-color: #73f15a;
-        }
-
-
-
-        /* h3 {
-             border: dodgerblue 3px solid;
-             border-radius: 50% ;
-         } */
-
-    </style>
 </head>
 <!--suppress HtmlDeprecatedAttribute -->
-<body background="Grey%20Basic.jpg" >
+<body background="Grey%20Basic.jpg">
 
 
 <ul>
     <li><a class="active" href="index.html">Home</a></li>
-    <li><a href="microbit.html">Microbits</a></li>
-    <li><a href="CV%20Jalen%20Stekelenburg.docx">CV</a></li>
-    <li><a href="artwork.html">Art</a></li>
-    <li><a href="ogsketch.html">Sketches</a></li>
+    <li><a href="site/microbit.html">Microbits</a></li>
+    <li><a href="site/CV%20Jalen%20Stekelenburg.docx">CV</a></li>
+    <li><a href="site/artwork.html">Art</a></li>
+    <li><a href="site/ogsketch.html">Sketches</a></li>
     <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
 </ul>
 
 <!--
- Animated menu i might take a look at https://www.cssscript.com/animated-round-popup-menu-with-pure-css/
- -
- https://toshca.carrd.co source for the code i'm toying with, note, need to look up what it all means
+ Animated menu i might take a look at https://www.cssscript.com/animated-round-popup-menu-with-pure-css/ -->
+
+ <!-- https://toshca.carrd.co source for the code i'm toying with, note, need to look up what it all means
 <div id="wrapper">
 </div>
     <div id="main">
@@ -86,7 +56,25 @@
 
 </header>
 -->
+<!-- round animted menu -->
+<nav class="menu">
+    <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open">
+    <label class="menu-open-button" for="menu-open">
+        <span class="lines lines-1"></span>
+        <span class="lines lines-2"></span>
+        <span class="lines lines-3"></span>
+    </label>
 
+    <a href="index.html" class="menu-item item-1">Home</a>
+    <a href="microbit.html" class="menu-item item-2">MB</a>
+    <a href="CV%20Jalen%20Stekelenburg.docx" class="menu-item item-3">CV</a>
+    <a href="artwork.html" class="menu-item item-4">Art</a>
+    <a href="ogsketch.html" class="menu-item item-5">Skts</a>
+    <a href="https://www.youtube.com" class="menu-item item-6" target="_blank">YT</a>
+
+</nav>
+
+<!-- round animted menu -->
 
 
 <form>
@@ -98,11 +86,11 @@
      <br> -->
     <br>
 
-    <h3> </h3>
+
 </form>
 
 <!--suppress HtmlDeprecatedTag -->
-<center> <img src="buggyarachne.png" alt="buggyarachne" class="center1" style="width: 250px"> </center>
+<center> <img src="images/buggyarachne.png" alt="buggyarachne" class="center1" style="width: 250px"> </center>
 
 <!-- <H3>[small round logo]</H3> -->
 
@@ -110,22 +98,26 @@
 
 <!-- <h1> [big square where my CV needs to be]</h1> -->
 
+<br>
 
 <h2>
-Welcome to my site, it's still a work in process but feel free to look around. <br>
-Here you can find my home page, you can check out my Microbits work, you can download my CV, see the art i've used on a single page
-or you can go to YouTube. <br>
-    Don't forget to press the button that says "Press Me" </h2>
+    Welcome to my site, it's still a work in process but feel free to look around. <br>
+    Here you can find my home page, you can check out my Microbits work, you can download my CV, see the art i've used
+    on a single page
+    or you can go to YouTube. <br>
+    You can use the basic navigation bar or be more stylefull and use the animated buttons. <br>
+    Don't forget to press the button that says "Press Me"
+</h2>
+
 
 <!--suppress HtmlDeprecatedTag -->
 <hr size="4" width="" align="center" color="grey">
 
 <br>
-<img src="BuggyBee.png" height="1000" width="1000" alt="Bee"/>
+<img src="images/BuggyBee.png" height="1000" width="1000" alt="Bee"/>
 
 
 </body>
-
 <footer>
     <p>Site creator: Jalen Stekelenburg</p>
 </footer>
