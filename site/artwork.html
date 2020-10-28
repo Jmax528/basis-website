@@ -11,39 +11,33 @@
 
     <style type="text/css">
 
-
-        ul {
-            list-style-type: none;
-            margin: auto;
-            padding: unset;
-            overflow: hidden;
-            background-color: black;
-        }
-        li {
-            float: left;
-        }
-        li a {
-            display: block;
-            color: snow;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: snow;
-        }
-        li a:hover {
-            background-color: #73f15a;
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
         }
 
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
 
     </style>
 </head>
+
 <!--suppress HtmlDeprecatedAttribute -->
 <body background="../images/GreyBasic.jpg" >
 
 <ul>
-    <li><a class="active" href="../index.html">Home</a></li>
+    <li><a href="../index.html">Home</a></li>
     <li><a href="microbit.html">Microbits</a></li>
     <li><a href="CV%20Jalen%20Stekelenburg.docx">CV</a></li>
-    <li><a href="artwork.html">Art</a></li>
+    <li><a class="topnav" href="artwork.html">Art</a></li>
     <li><a href="ogsketch.html">Sketches</a></li>
     <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
 </ul>
@@ -69,13 +63,83 @@
  <!--round animted menu -->
 
 <h2>
-    The art used is by artis @Jmax528 (me) <br>
-    Characters are "Bug companions" from the game series; Death end re;Quest
+ Artwork Page
 </h2>
+<br>
 
-<img src="../images/BuggieArachne.png" height="1000" width="1000" alt="Arachne"/>
-<img src="../images/BuggyBee.png" height="1000" width="1000" alt="Bee"/>
-<img src="../images/BuggyG.png" height="1000" width="1000" alt="Centipede"/>
+<div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="../images/BuggieArachne.png" height="1000" width="1000" alt="Arachne">
+</div>
+<div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="../images/BuggyG.png" height="1000" width="1000" alt="Centipede">
+</div>
+<div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="../images/BuggyBee.png" height="1000" width="1000" alt="Bee">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094</a>
+<a class="next" onclick="plusSlides(1)">&#10095</a>
+<br>
+<div style="text-align: center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+<br>
+<table>
+    <tr>
+        <th>Artist: Jmax528</th>
+    </tr>
+    <tr>
+        <th>Name</th>
+        <th>Game</th>
+    </tr>
+    <tr>
+        <td>BuggieArachne</td>
+        <td>Death end re;Quest</td>
+    </tr>
+    <tr>
+        <td>BuggyG</td>
+        <td>Death end re;Quest</td>
+    </tr>
+    <tr>
+        <td>BuggyBee</td>
+        <td>Death end re;Quest</td>
+    </tr>
+</table>
+
 
 
 
