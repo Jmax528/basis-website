@@ -87,7 +87,7 @@ img {vertical-align: middle}
     color: #EEEEEE;
     font-size: 12px;
     padding: 8px 12px;
-    position: absolute;
+    position: unset;
     top: 0;
 }
 

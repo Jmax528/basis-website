@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--suppress ALL -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,6 +9,75 @@
     <title>Artwork</title>
     <link rel="icon" href="../images/buggyarachne.png"  sizes="32x32">
     <link rel="stylesheet" href="style.css">
+</head>
+
+<!--suppress HtmlDeprecatedAttribute -->
+<body background="../images/GreyBasic.jpg" >
+<header>
+    <section>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="microbit.html">Microbits</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a class="topnav" href="artwork.html">Art</a></li>
+            <li><a href="ogsketch.html">Sketches</a></li>
+            <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+        </ul>
+    </section>
+    <h2>
+        Artwork Page
+    </h2>
+    <br>
+    <figure class="mySlides fade">
+        <figcaption class="numbertext">1 / 3</figcaption>
+        <img src="../images/BuggieArachne.png" height="1000" width="1000" alt="Arachne">
+    </figure>
+    <figure class="mySlides fade">
+        <figcaption class="numbertext">2 / 3</figcaption>
+        <img src="../images/BuggyG.png" height="1000" width="1000" alt="Centipede">
+    </figure>
+    <figure class="mySlides fade">
+        <figcaption class="numbertext">3 / 3</figcaption>
+        <img src="../images/BuggyBee.png" height="1000" width="1000" alt="Bee">
+    </figure>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+    <a class="next" onclick="plusSlides(1)">&#10095</a>
+    <br>
+    <figure style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </figure>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
 
     <style type="text/css">
 
@@ -28,26 +98,6 @@
         }
 
     </style>
-</head>
-
-<!--suppress HtmlDeprecatedAttribute -->
-<body background="../images/GreyBasic.jpg" >
-<header>
-<section>
-    <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="microbit.html">Microbits</a></li>
-        <li><a href="CV%20Jalen%20Stekelenburg.docx">CV</a></li>
-        <li><a class="topnav" href="artwork.html">Art</a></li>
-        <li><a href="ogsketch.html">Sketches</a></li>
-        <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
-    </ul>
-</section>
-    <h2>
-        Artwork Page
-    </h2>
-    <br>
-
     <br>
     <table>
         <tr>
@@ -73,79 +123,26 @@
 </header>
 
 <section>
-<!-- round animted menu -->
-<nav class="menu">
-    <input type="checkbox" class="menu-open" name="menu-open" id="menu-open">
-    <label class="menu-open-button" for="menu-open">
-        <span class="lines lines-1"></span>
-        <span class="lines lines-2"></span>
-        <span class="lines lines-3"></span>
-    </label>
+    <!-- round animted menu -->
+    <nav class="menu">
+        <input type="checkbox" class="menu-open" name="menu-open" id="menu-open">
+        <label class="menu-open-button" for="menu-open">
+            <span class="lines lines-1"></span>
+            <span class="lines lines-2"></span>
+            <span class="lines lines-3"></span>
+        </label>
 
-    <a href="../index.html" class="menu-item item-1">Home</a>
-    <a href="microbit.html" class="menu-item item-2">MB</a>
-    <a href="CV%20Jalen%20Stekelenburg.docx" class="menu-item item-3">CV</a>
-    <a href="artwork.html" class="menu-item item-4">Art</a>
-    <a href="ogsketch.html" class="menu-item item-5">Skts</a>
-    <a href="https://www.youtube.com" class="menu-item item-6" target="_blank">YT</a>
+        <a href="../index.html" class="menu-item item-1">Home</a>
+        <a href="./microbit.html" class="menu-item item-2">MB</a>
+        <a href="./cv.html" class="menu-item item-3">CV</a>
+        <a href="./artwork.html" class="menu-item item-4">Art</a>
+        <a href="./ogsketch.html" class="menu-item item-5">Skts</a>
+        <a href="https://www.youtube.com" class="menu-item item-6" target="_blank">YT</a>
 
-</nav>
+    </nav>
 </section>
-
-
-<div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="../images/BuggieArachne.png" height="1000" width="1000" alt="Arachne">
-</div>
-<div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="../images/BuggyG.png" height="1000" width="1000" alt="Centipede">
-</div>
-<div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="../images/BuggyBee.png" height="1000" width="1000" alt="Bee">
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">&#10094</a>
-<a class="next" onclick="plusSlides(1)">&#10095</a>
-<br>
-<div style="text-align: center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-</div>
-
-<script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-    }
-</script>
-
-</body>
 <footer>
     <p>Site creator: Jalen Stekelenburg</p>
 </footer>
+</body>
 </html>
