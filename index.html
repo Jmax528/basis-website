@@ -15,7 +15,7 @@
 <body background="./images/GreyBasic.jpg" >
 
 <header>
-<section>
+    <nav>
 <ul>
     <li><a class="topnav" href="index.html">Home</a></li>
     <li><a href="./site/microbit.html">Microbits</a></li>
@@ -25,14 +25,15 @@
     <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
     <li class="active" color></li>
 </ul>
-</section>
+    </nav>
     <form>
-        <button class="btn btn-success" onclick="window.open('https://youtu.be/dQw4w9WgXcQ');">
+        <button class="btnYT btn-success" onclick="window.open('https://youtu.be/dQw4w9WgXcQ');">
             Press Me</button>
         <br>
 
     </form>
-    <h2>
+    <section class="containerMain">
+        <h2>
         Welcome to my site, it's still a work in process but feel free to look around. <br>
         Here you can find my home page, you can check out my Microbits work, you can look at my CV,
         see the art i've used
@@ -40,10 +41,11 @@
         or you can go to YouTube. <br>
         You can use the basic navigation bar or be more stylefull and use the animated buttons. <br>
         Don't forget to press the button that says "Press Me"
-    </h2>
+        </h2>
+    </section>
 </header>
 
-<section>
+
 <!-- round animted menu -->
 <nav class="menu">
     <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open">
@@ -60,7 +62,6 @@
     <a href="./site/ogsketch.html" class="menu-item item-5">Skts</a>
     <a href="https://www.youtube.com" class="menu-item item-6" target="_blank">YT</a>
 </nav>
-</section>
 <!-- round animted menu -->
 
 
@@ -72,11 +73,13 @@
 <hr size="4" width="" align="center" color="grey">
 
 <br>
-<img src="images/BuggyBee.png" height="1000" width="1000" alt="Bee"/>
+ <img src="images/BuggyBee.png" class="BugB" alt="Bee"/>
 </section>
 
 <footer>
-    <p>Site creator: Jalen Stekelenburg</p>
+    <p>Site creator: Jalen Stekelenburg <br>
+        2020
+    </p>
 </footer>
 </body>
 </html>
