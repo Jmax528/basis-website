@@ -15,7 +15,7 @@
 <body background="./images/GreyBasic.jpg" >
 
 <header>
-<section>
+    <nav>
 <ul>
     <li><a class="topnav" href="index.html">Home</a></li>
     <li><a href="./site/microbit.html">Microbits</a></li>
@@ -25,13 +25,32 @@
     <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
     <li class="active" color></li>
 </ul>
-</section>
+    </nav>
     <form>
-        <button class="btn btn-success" onclick="window.open('https://youtu.be/dQw4w9WgXcQ');">
+        <button class="btnYT btn-success" onclick="window.open('https://youtu.be/dQw4w9WgXcQ');">
             Press Me</button>
         <br>
-
     </form>
+    <!-- round animted menu -->
+    <nav class="menu">
+        <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open">
+        <label class="menu-open-button" for="menu-open">
+            <span class="lines lines-1"></span>
+            <span class="lines lines-2"></span>
+            <span class="lines lines-3"></span>
+        </label>
+
+        <a href="index.html" class="menu-item item-1">Home</a>
+        <a href="./site/microbit.html" class="menu-item item-2">MB</a>
+        <a href="./site/CV%20Jalen%20Stekelenburg.docx" class="menu-item item-3">CV</a>
+        <a href="./site/artwork.html" class="menu-item item-4">Art</a>
+        <a href="./site/ogsketch.html" class="menu-item item-5">Skts</a>
+        <a href="https://www.youtube.com" class="menu-item item-6" target="_blank">YT</a>
+    </nav>
+    <!-- round animted menu -->
+</header>
+
+<section class="containerText">
     <h2>
         Welcome to my site, it's still a work in process but feel free to look around. <br>
         Here you can find my home page, you can check out my Microbits work, you can look at my CV,
@@ -41,28 +60,7 @@
         You can use the basic navigation bar or be more stylefull and use the animated buttons. <br>
         Don't forget to press the button that says "Press Me"
     </h2>
-</header>
-
-<section>
-<!-- round animted menu -->
-<nav class="menu">
-    <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open">
-    <label class="menu-open-button" for="menu-open">
-        <span class="lines lines-1"></span>
-        <span class="lines lines-2"></span>
-        <span class="lines lines-3"></span>
-    </label>
-
-    <a href="index.html" class="menu-item item-1">Home</a>
-    <a href="./site/microbit.html" class="menu-item item-2">MB</a>
-    <a href="./site/CV%20Jalen%20Stekelenburg.docx" class="menu-item item-3">CV</a>
-    <a href="./site/artwork.html" class="menu-item item-4">Art</a>
-    <a href="./site/ogsketch.html" class="menu-item item-5">Skts</a>
-    <a href="https://www.youtube.com" class="menu-item item-6" target="_blank">YT</a>
-</nav>
 </section>
-<!-- round animted menu -->
-
 
 <section class="page1Images">
 <!--suppress HtmlDeprecatedTag -->
@@ -72,11 +70,13 @@
 <hr size="4" width="" align="center" color="grey">
 
 <br>
-<img src="images/BuggyBee.png" height="1000" width="1000" alt="Bee"/>
+ <img src="images/BuggyBee.png" class="BugB" alt="Bee"/>
 </section>
 
 <footer>
-    <p>Site creator: Jalen Stekelenburg</p>
+    <section class="footerBox">
+        <p>Site creator: Jalen Stekelenburg</p>
+    </section>
 </footer>
 </body>
 </html>
